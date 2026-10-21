@@ -70,14 +70,7 @@
     padding:13px 15px; margin:16px 0; font-size:.9rem;
   }
   .note strong{color:var(--warn)}
-  .links{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 0}
-  .btn{
-    display:inline-block; padding:9px 15px; border-radius:6px; border:1px solid var(--line);
-    background:#fff; color:var(--accent); text-decoration:none; font-size:.9rem;
-  }
-  .btn:hover{background:var(--soft)}
-  .btn[aria-disabled="true"]{color:#9aa4ae; background:var(--soft); cursor:not-allowed; border-style:dashed}
-  footer{padding:30px 0 54px; color:var(--muted); font-size:.84rem}
+  section:last-of-type{padding-bottom:54px}
   @media (max-width:640px){
     header.top .wrap{padding-top:30px}
     h1{font-size:1.42rem}
@@ -94,7 +87,6 @@
     thead th{background:#1b1f24; border-bottom-color:#39414a}
     .q{color:#cfd6dd}
     .note{border-color:#4a3a24}
-    .btn{background:#181c20}
     .figslot{background:#181c20; border-color:#39414a}
   }
 </style>
@@ -125,7 +117,6 @@
     <a href="#figure">主图</a>
     <a href="#repro">可复现性</a>
     <a href="#limits">边界</a>
-    <a href="#links">材料</a>
   </div>
 </nav>
 
@@ -292,22 +283,6 @@
     <li>“存在一个简单实现也拿高分”只说明该替代实现存在,<strong>不说明模型使用了它</strong>;优于有限策略只缩小已考察的解释范围,<strong>不证明</strong>普遍因果推理能力。</li>
   </ul>
 </section>
-
-<section id="links">
-  <h2>材料</h2>
-  <p class="muted">论文、代码与数据链接在确定公开方式后填入(与匿名评审要求相关,暂留占位)。</p>
-  <div class="links">
-    <a class="btn" href="#" aria-disabled="true">论文 PDF(待发布)</a>
-    <a class="btn" href="#" aria-disabled="true">代码仓库(待发布)</a>
-    <a class="btn" href="#" aria-disabled="true">复现包(待发布)</a>
-    <a class="btn" href="assets/fig_r41_main_v2.pdf">主图 PDF</a>
-  </div>
-</section>
-
-<footer>
-  <p>本站为纯静态页面:单一 HTML 文件,无外部字体、无第三方脚本、无追踪。<br>
-  如页面中某些数字与论文正文不一致,以论文与复现包的冻结记录为准。</p>
-</footer>
 
 </div>
 </body>
