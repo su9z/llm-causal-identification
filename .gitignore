@@ -1,0 +1,30 @@
+# 站点不需要任何构建产物
+node_modules/
+dist/
+.cache/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地预览与临时文件
+*.log
+~$*
+*.tmp
+*.bak
+
+# 绝不入库:模型权重、大文件、凭据
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+*.zip
+.env
+.env.*
+id_rsa*
+*.pem
+*.key
