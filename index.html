@@ -14,66 +14,52 @@
   html{-webkit-text-size-adjust:100%}
   body{
     margin:0; background:var(--bg); color:var(--fg);
-    font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",
+    font:16px/1.78 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC",
          "Microsoft YaHei",system-ui,sans-serif;
   }
-  .wrap{max-width:880px; margin:0 auto; padding:0 22px}
+  .wrap{max-width:820px; margin:0 auto; padding:0 22px}
   header.top{border-bottom:1px solid var(--line); background:linear-gradient(#fbfcfd,#fff)}
-  header.top .wrap{padding-top:44px; padding-bottom:30px}
-  h1{font-size:1.72rem; line-height:1.35; margin:0 0 10px; letter-spacing:-.01em}
-  .sub{color:var(--muted); font-size:1.02rem; margin:0 0 18px}
-  .meta{color:var(--muted); font-size:.88rem}
+  header.top .wrap{padding-top:46px; padding-bottom:32px}
+  h1{font-size:1.68rem; line-height:1.38; margin:0 0 10px; letter-spacing:-.01em}
+  .sub{color:var(--muted); font-size:1rem; margin:0 0 20px}
   .lede{
     background:var(--soft); border:1px solid var(--line); border-left:3px solid var(--accent);
-    border-radius:6px; padding:16px 18px; margin:22px 0 0; font-size:.98rem;
+    border-radius:6px; padding:16px 18px; margin:22px 0 0; font-size:.97rem;
   }
   .lede p{margin:0}
   nav{border-bottom:1px solid var(--line); background:#fff; position:sticky; top:0; z-index:5}
-  nav .wrap{display:flex; gap:18px; flex-wrap:wrap; padding:11px 22px; font-size:.9rem}
+  nav .wrap{display:flex; gap:20px; flex-wrap:wrap; padding:11px 22px; font-size:.9rem}
   nav a{color:var(--muted); text-decoration:none}
   nav a:hover{color:var(--accent)}
-  section{padding:38px 0; border-bottom:1px solid var(--line)}
-  section:last-of-type{border-bottom:none}
-  h2{font-size:1.22rem; margin:0 0 14px; letter-spacing:-.005em}
-  h3{font-size:1rem; margin:24px 0 8px; color:var(--accent)}
-  p{margin:0 0 13px}
+  section{padding:40px 0; border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:none; padding-bottom:56px}
+  h2{font-size:1.18rem; margin:0 0 6px; letter-spacing:-.005em}
+  .tag{color:var(--muted); font-size:.84rem; margin:0 0 16px}
+  p{margin:0 0 14px}
   .muted{color:var(--muted)}
-  .q{
-    border-left:3px solid var(--line); padding:2px 0 2px 16px; margin:16px 0;
-    color:#243040; font-size:1rem;
-  }
-  table{width:100%; border-collapse:collapse; margin:14px 0 8px; font-size:.88rem}
-  caption{caption-side:top; text-align:left; color:var(--muted); font-size:.82rem; padding-bottom:7px}
+  table{width:100%; border-collapse:collapse; margin:16px 0 10px; font-size:.88rem}
+  caption{caption-side:top; text-align:left; color:var(--muted); font-size:.81rem; padding-bottom:7px}
   th,td{padding:8px 9px; border-bottom:1px solid var(--line); text-align:right}
   th:first-child, td:first-child{text-align:left}
   thead th{border-bottom:2px solid #cfd5dc; font-weight:600; background:var(--soft)}
   tbody tr:hover{background:#fafbfc}
-  .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; margin:18px 0}
+  .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:13px; margin:20px 0}
   .card{border:1px solid var(--line); border-radius:7px; padding:14px 15px; background:#fff}
-  .card .k{font-size:1.35rem; font-weight:650; color:var(--accent); line-height:1.25}
-  .card .l{color:var(--muted); font-size:.82rem; margin-top:5px}
-  figure{margin:18px 0; padding:0}
+  .card .k{font-size:1.3rem; font-weight:650; color:var(--accent); line-height:1.25}
+  .card .l{color:var(--muted); font-size:.81rem; margin-top:5px}
+  figure{margin:20px 0 0; padding:0}
   figure img{width:100%; height:auto; display:block; border:1px solid var(--line); border-radius:6px; background:#fff}
-  .figslot{
-    border:1px dashed #c9d1da; border-radius:6px; background:var(--soft);
-    padding:34px 18px; text-align:center; color:var(--muted); font-size:.88rem;
-  }
-  figcaption{color:var(--muted); font-size:.82rem; margin-top:9px; line-height:1.6}
-  ul{margin:0 0 13px; padding-left:22px}
-  li{margin:0 0 7px}
-  code{
-    font:.86em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-    background:var(--soft); border:1px solid var(--line); border-radius:4px; padding:.08em .34em;
-  }
+  figcaption{color:var(--muted); font-size:.82rem; margin-top:10px; line-height:1.65}
+  ul{margin:0 0 14px; padding-left:22px}
+  li{margin:0 0 8px}
   .note{
     background:var(--warnbg); border:1px solid #f0d9b5; border-radius:6px;
-    padding:13px 15px; margin:16px 0; font-size:.9rem;
+    padding:13px 15px; margin:18px 0; font-size:.9rem;
   }
   .note strong{color:var(--warn)}
-  section:last-of-type{padding-bottom:54px}
   @media (max-width:640px){
     header.top .wrap{padding-top:30px}
-    h1{font-size:1.42rem}
+    h1{font-size:1.38rem}
     th,td{padding:7px 6px; font-size:.82rem}
   }
   @media (prefers-color-scheme:dark){
@@ -85,9 +71,7 @@
     nav{background:#14171a}
     .card{background:#181c20}
     thead th{background:#1b1f24; border-bottom-color:#39414a}
-    .q{color:#cfd6dd}
     .note{border-color:#4a3a24}
-    .figslot{background:#181c20; border-color:#39414a}
   }
 </style>
 </head>
@@ -96,191 +80,124 @@
 <header class="top">
   <div class="wrap">
     <h1>大语言模型的因果识别能力:分数能说明什么</h1>
-    <p class="sub">两个实证研究 —— 因果形式化高分的解释边界,以及因果假设变化下的识别状态更新</p>
-    <p class="meta">因果部分识别 · 二值工具变量 · Qwen2.5-7B-Instruct · 精确有理数求解</p>
+    <p class="sub">两个实证研究 —— 高分能不能证明能力,以及假设变了能不能改对</p>
 
     <div class="lede">
-      <p>两个项目共同追问一件事:<strong>当一个模型在因果任务上取得高分时,我们凭什么说它具备所声称的能力?</strong>
-      第一个项目构造了一个不做任何算术的受限程序,它在因果形式化任务上取得与微调模型相同的 <strong>233/233</strong> 满分,
-      并给出了该程序成功与否的精确数学条件,从而说明这个分数无法区分“一般因果形式化”与“族内模板路由”。
-      第二个项目把问题推进到<strong>假设变化</strong>:在证据与目标固定、仅增加一条结果单调性假设的配对设置下,
-      用冻结模型在 120 个全新实例上做前瞻性确认,并用 B/Q/U 分解把“原题是否答对”与“新假设下是否正确应用”分开。</p>
+      <p>两个项目都在追问同一件事:<strong>当一个模型在因果任务上取得高分时,我们凭什么说它具备所声称的能力?</strong>
+      第一个项目说明,这个分数可以用一个不做任何计算的程序拿到,因此它区分不了“真的在推导”和“套模板”。
+      第二个项目把问题推进到假设变化:在证据不变、只增加一条因果假设时,模型能不能把答案改对。</p>
     </div>
   </div>
 </header>
 
 <nav>
   <div class="wrap">
-    <a href="#question">研究问题</a>
-    <a href="#project1">项目一:契约审计</a>
-    <a href="#project2">项目二:假设更新</a>
+    <a href="#p1">项目一</a>
+    <a href="#p2">项目二</a>
     <a href="#figure">主图</a>
-    <a href="#repro">可复现性</a>
     <a href="#limits">边界</a>
   </div>
 </nav>
 
 <div class="wrap">
 
-<section id="question">
-  <h2>研究问题</h2>
-  <p>一个评测分数只记录“输出是否满足判据”,它不说明<strong>是哪一种计算产生了这个输出</strong>,也不说明
-  <strong>这种成功会延伸到哪</strong>。而在因果推断里,这一点尤其要紧:同一个正确答案,既可能来自对潜在结果模型的推导,
-  也可能来自识别题型、套用模板、把输入数值填进对应位置。</p>
-
-  <div class="q">
-    项目一:这项任务的分数,是否必须调用我们想测量的能力才能取得?<br>
-    项目二:在观测证据与因果目标固定、只改变一条因果假设时,模型能否正确更新对识别状态的判断?
-  </div>
-
-  <p>两个项目都选择<strong>真值可精确计算</strong>的任务:二元工具变量 <code>Z</code>、处理 <code>D</code>、结果 <code>Y</code>,
-  目标是顺从者平均处理效应 <code>E[Y(1)−Y(0) | D(1)=1, D(0)=0]</code>(要求顺从者质量为正)。
-  识别状态分四类:<code>infeasible</code> / <code>point</code> / <code>partial</code> / <code>unidentified</code>,
-  参照区间恒为 <code>[−1,1]</code>。这样每一道题都有唯一正确答案,且可用精确有理数线性规划核验。</p>
-</section>
-
-<section id="project1">
+<section id="p1">
   <h2>项目一:这个分数能说明什么</h2>
+  <p class="tag">因果部分识别 · 把自然语言题目转成线性规划并给出识别结论</p>
 
-  <p>在一批用于因果形式化的评分样本上,微调后的模型取得了 <strong>233/233</strong> 满分,而未微调的基座模型是
-  <strong>0/233</strong>,打乱配对的负对照同样是 <strong>0/233</strong>。表面上看,这像是一次干净的“学到了”。</p>
+  <p>在一个因果形式化的任务上,微调后的模型拿到了满分 233/233,未微调的基座模型是 0/233,
+  把题目与答案打乱配对后也是 0/233。表面上,这像是一次干净的“学会了”。</p>
 
-  <h3>构造一个不做计算的替代实现</h3>
-  <p>但检查目标本身发现:答案里每一个实例特定数值都能在题目中<strong>原样找到</strong>,整批题目的结构差异只有
-  <strong>一个比特</strong>。于是可以写出一个受限程序:只做<strong>模板选择</strong>与<strong>字段转录</strong>,
-  <strong>不对任何实例值做算术,不调用优化器</strong>。</p>
+  <p>但检查题目本身会发现:答案里每一个数值都能在题目里原样找到,整批题目的结构差异其实只有一个开关。
+  于是我写了一个<strong>只做模板选择、把数值抄进对应位置、不做任何计算</strong>的程序。</p>
 
   <div class="cards">
-    <div class="card"><div class="k">233/233</div><div class="l">模板—路由程序(不做算术)</div></div>
-    <div class="card"><div class="k">233/233</div><div class="l">微调模型(同一判据)</div></div>
-    <div class="card"><div class="k">0/233</div><div class="l">打乱配对负对照</div></div>
-    <div class="card"><div class="k">2/233</div><div class="l">伴随搜索探针(精确命中)</div></div>
+    <div class="card"><div class="k">233 / 233</div><div class="l">微调模型</div></div>
+    <div class="card"><div class="k">233 / 233</div><div class="l">不做计算的模板程序</div></div>
+    <div class="card"><div class="k">0 / 233</div><div class="l">打乱配对负对照</div></div>
   </div>
 
-  <p>结论只能到这一步:<strong>该评分允许这个较简单的实现取得同样分数,因此仅凭成绩无法确定模型完成了多大范围的因果形式化。</strong>
-  它不证明模型内部使用了模板,也不否认形式化任务本身的价值。</p>
+  <p><strong>结论</strong>:这个分数允许一个简单得多的实现拿到,所以仅凭成绩,无法确定模型完成了多大范围的因果形式化。
+  它不证明模型内部真的在套模板,也不否认这个任务本身的价值——它限制的是<strong>这个分数能支持多强的能力主张</strong>。</p>
 
-  <h3>两件方法学上的补充</h3>
-  <ul>
-    <li><strong>失败可以来自两种不同原因。</strong>后续的候选选择与覆盖分析区分了“有正确候选但选错”与“候选集合根本没有覆盖所需解”,
-    并给出该类候选生成器成功与否的精确条件。因此除了看分数,还要说明成功条件与失败边界。</li>
-    <li><strong>打败一个实现,不等于排除邻近实现。</strong>在有限适应序列里,同族策略只需极小改动(放宽允许删除的行数),
-    语义变体上的成功数即从 12/60 升到 60/60。这直接限制了“用变换题打败它就证明不具备该能力”这类推断。</li>
-  </ul>
-
-  <p class="muted">补充:那套原本用于描述目标“可抄性”的字符串统计量,在做保义重写时被证明不稳定
-  (把 <code>1/2</code> 写成 <code>3/6</code>,数值重叠从 1.0000 掉到 0.0000),因此最终论证建立在<strong>可执行程序</strong>之上,
-  而不是字符串统计量之上。</p>
+  <p class="muted">另有一项方法学发现:打败一个实现,并不等于排除它附近的实现。同一族策略只要稍作放宽,
+  成绩就能从 12/60 升到 60/60,所以“用变换题打败它就证明不具备该能力”这类推断站不住。</p>
 </section>
 
-<section id="project2">
-  <h2>项目二:假设变化时能否正确更新</h2>
+<section id="p2">
+  <h2>项目二:假设变了,能不能改对</h2>
+  <p class="tag">同一份证据 · 只增加一条假设 · 前后配对作答</p>
 
-  <p>第二项研究把问题从“原题会不会答”推进到“<strong>假设变了,答案会不会跟着变对</strong>”。
-  实验保持观测证据与因果目标不变,只增加一条<strong>结果单调性</strong> <code>Y(1) ≥ Y(0)</code> 假设
-  (它与<strong>治疗单调性</strong> <code>D(1) ≥ D(0)</code> 是两个不同的限制)。</p>
+  <p>第二项研究把问题从“原题会不会答”推进到“<strong>假设变了,答案会不会跟着改对</strong>”。
+  实验保持观测数据和因果目标不变,只增加一条新的因果假设,让模型重新判断结论的类型:
+  是能唯一确定、只能确定一个范围、完全没有缩小范围,还是数据与假设互相冲突。</p>
 
-  <h3>设计</h3>
-  <ul>
-    <li><strong>120 个全新基础实例</strong>,与历史用过的实例按证据指纹零重叠;三个预定义生成池等权。</li>
-    <li><strong>20 个评测格</strong>,共 <strong>19,200 次生成</strong>,<strong>不做任何新增训练</strong>——三个冻结训练运行、三个适配器。</li>
-    <li><strong>四类提示条件</strong>:历史规格 / 完整规格 × 不施加 / 施加新限制。完整规格的两种条件<strong>只差一个开关</strong>。</li>
-    <li>模型两侧<strong>在独立上下文中作答</strong>,不把旧答案放进新题。</li>
-    <li>同一证据下,标准答案<strong>该变的题对</strong>与<strong>该不变的题对</strong>都要评。</li>
-  </ul>
+  <p>用三个种子的微调模型,在 <strong>120 个全新实例</strong>上做了前瞻性确认,共 <strong>20 个评测条件、19,200 次生成</strong>,
+  全程没有新增训练。同一道题的两个版本在各自独立的上下文里作答,不把旧答案喂给新题。</p>
 
   <table>
-    <caption>表 1 · 单题状态准确率(每格 960 题;种子按标识符排序,不按表现)</caption>
+    <caption>表 · 单题正确率,每格 960 题(三个种子按编号排序,不按表现)</caption>
     <thead>
       <tr><th>条件</th><th>种子 27</th><th>种子 28</th><th>种子 29</th></tr>
     </thead>
     <tbody>
-      <tr><td>历史规格 · 不施加限制 (O-F)</td><td>905 / 960</td><td>893 / 960</td><td>881 / 960</td></tr>
-      <tr><td>历史规格 · 施加限制 (O-T)</td><td>426 / 960</td><td>402 / 960</td><td>366 / 960</td></tr>
-      <tr><td>完整规格 · 显式 false (N-F)</td><td>384 / 960</td><td>478 / 960</td><td>443 / 960</td></tr>
-      <tr><td>完整规格 · 显式 true (N-T)</td><td>335 / 960</td><td>349 / 960</td><td>521 / 960</td></tr>
+      <tr><td>熟悉说法 · 不加新假设</td><td>905 / 960</td><td>893 / 960</td><td>881 / 960</td></tr>
+      <tr><td>熟悉说法 · 加了新假设</td><td>426 / 960</td><td>402 / 960</td><td>366 / 960</td></tr>
+      <tr><td>更完整说法 · 不加</td><td>384 / 960</td><td>478 / 960</td><td>443 / 960</td></tr>
+      <tr><td>更完整说法 · 加了</td><td>335 / 960</td><td>349 / 960</td><td>521 / 960</td></tr>
     </tbody>
   </table>
 
-  <h3>B / Q / U:把失败拆成两半</h3>
-  <p>在标准答案真正改变的 <strong>470 个题对</strong>上,记 <code>F</code> 为原题是否答对、<code>T</code> 为新题是否答对:</p>
-  <ul>
-    <li><code>B = ΣF / 470</code> —— 原题正确率</li>
-    <li><code>Q = ΣFT / ΣF</code> —— 在原题答对之后,新题也答对的<strong>条件</strong>比例(分母随条件变化)</li>
-    <li><code>U = ΣFT / 470</code> —— 两侧同时正确率,且 <code>U = BQ</code></li>
-  </ul>
+  <p><strong>主要发现</strong>:在标准答案真正发生变化的 470 组题对上,原题答对的比例很高(约 93%–95%),
+  但在原题答对之后、新题也答对的比例几乎为零。也就是说,失败不在“读不懂题”,而在
+  <strong>原题答对之后答案没有被改对</strong>——多数情况下,模型重复了它原本给出的那个结论。</p>
 
   <div class="cards">
-    <div class="card"><div class="k">0.93–0.95</div><div class="l">B:原题基本都答对(历史规格)</div></div>
-    <div class="card"><div class="k">≈ 0</div><div class="l">Q:原题答对后新题仍对(历史规格)</div></div>
-    <div class="card"><div class="k">0 / 0 / 5</div><div class="l">U:470 个变化对里两侧同时正确</div></div>
-    <div class="card"><div class="k">+0.121</div><div class="l">ΔU:完整规格相对历史规格</div></div>
+    <div class="card"><div class="k">0 / 0 / 5</div><div class="l">470 组变化题对里两侧都对的组数</div></div>
+    <div class="card"><div class="k">+0.121</div><div class="l">换成更完整说法后的配对成功率提升</div></div>
+    <div class="card"><div class="k">40–50%</div><div class="l">同一改动下,全 960 题正确率的代价</div></div>
   </div>
 
-  <p>也就是说:失败并不主要表现为“读不懂题”,而表现为<strong>原题答对之后,新题很少答对</strong>。
-  进一步的配对检查显示,在原题答对的那部分题里,模型大多<strong>重复了它原本给出的那个标签</strong>——
-  而在新假设下那个标签已经不对了。</p>
-
-  <h3>收益与代价同时出现</h3>
-  <p>换成完整规格后,配对成功率上升:<code>ΔU = +0.1206</code>,95% 实例聚类区间 <code>[+0.1040, +0.1372]</code>
-  (10,000 次整实例重采样,三种子等权)。<strong>但代价同时出现</strong>:全 960 题准确率降到
-  <strong>40.0%–49.8%</strong>,而且没有一个种子达到预设的 <code>U ≥ 0.60</code> 门槛。</p>
+  <p>换成更完整的任务说明后,配对成功率明显上升(升幅约 +0.12,区间约 +0.10 到 +0.14,不跨零),
+  说明<strong>表述方式确实是一个有效杠杆</strong>;但代价是原题正确率从九十多掉到四到五成,
+  而且没有一次达到事先设定的可靠性门槛。收益和代价是同时出现的。</p>
 
   <div class="note">
-    <strong>这里有两个必须分开说的分母。</strong>
-    91.8%–94.3% 与 40.0%–49.8% 都是“全部 960 题”的准确率;<code>B</code> 与 <code>U</code> 的分母是 470 个变化题对;
-    <code>Q</code> 的分母是该条件下原题答对的题数。三者不可混用,也不可相互比较。
+    <strong>两个分母不能混。</strong>九十多与四到五成,都是“全部 960 题”的正确率;
+    而 0/0/5 这类配对数字的分母是 470 组“答案真的变了”的题对。两者不可比较。
   </div>
 
-  <p>此外,一个<strong>从未见过这条新假设</strong>的浅层数值决策树在“不施加限制”的条件下取得 <strong>95.3%</strong>,
-  在历史规格下仅落后适配器 1.0–3.5 个百分点;而未微调的基座模型在“施加限制”条件下的单题准确率为
-  <strong>65.6%</strong>,高于三个微调适配器。这些对照限定了“高分”能支持的解释范围。</p>
+  <p class="muted">对照还显示:一个从未见过这条新假设的浅层规则,在“不加假设”的条件下能达到 95.3%;
+  未微调的基座模型在“加了假设”条件下的单题正确率为 65.6%,高于三个微调模型。
+  这些结果一起限定了“高分”能解释到什么程度。</p>
 </section>
 
 <section id="figure">
   <h2>主图</h2>
   <figure>
     <img src="assets/fig_r41_main_v2.svg"
-         alt="四个面板:四格准确率、B/Q/U 分解、ΔU 与聚类区间、四种冻结规则基线对照"
+         alt="四个面板:四类条件的正确率、配对成功率的分解、提升幅度与区间、与四种简单规则的对照"
          onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-    <div class="figslot" style="display:none">
-      图 1(矢量版)<code>fig_r41_main_v2.svg</code> 尚未放入 <code>assets/</code>。<br>
-      把该文件复制到本站的 <code>assets/</code> 目录即可显示。
+    <div class="note" style="display:none">
+      主图文件 <strong>fig_r41_main_v2.svg</strong> 尚未放入 <strong>assets/</strong> 目录。
     </div>
     <figcaption>
-      <strong>图 1 · 主结果。</strong>
-      (a) 四类提示条件下三个适配器的单题准确率,每个条件 960 题。
-      (b) 470 个变化题对上的 <code>B</code> / <code>Q</code> / <code>U</code> 分解;<code>B</code> 与 <code>U</code> 的分母是 470,
-      <code>Q</code> 的分母是该条件下原题答对的题数。
-      (c) <code>ΔU</code> 的逐种子值与三种子等权均值,误差条为 10,000 次整实例重采样的 95% 百分位区间。
-      (d) 四种冻结规则基线与适配器在各条件下的对照。所有区间<strong>条件于这三个已冻结的训练运行</strong>,
-      只反映实例不确定性。
+      <strong>图 · 主结果。</strong>
+      左上:四类条件、三个模型的单题正确率。右上:470 组变化题对上的分解——原题答对、原题答对后新题也对、以及两侧同时答对。
+      左下:换成更完整说法后配对成功率的提升,以及它的不确定性区间。右下:四种简单规则与微调模型的对照。
+      图中所有区间都<strong>只代表实例抽样带来的不确定性</strong>,条件于这三个已固定的训练运行。
     </figcaption>
   </figure>
 </section>
 
-<section id="repro">
-  <h2>可复现性</h2>
-  <p>核心结果由一个<strong>单入口、免 GPU</strong>的复现包重算:它按 SHA256 校验每个记录文件,
-  重算逐格计数、<code>B/Q/U</code>、行为分类、<code>ΔU</code> 与其聚类区间、以及四种规则基线,
-  并与冻结参考值比对。它在独立目录中运行,不读取包外文件、不下载、不重新拟合。</p>
-  <ul>
-    <li>区间与计数按<strong>显式种子键</strong>连接,不按数值大小排序。</li>
-    <li>重采样按<strong>整实例</strong>进行并<strong>保留重复抽中的次数</strong>;分母为零记 <code>NA</code>,同时报告有效重复数。</li>
-    <li>同时报告<strong>未覆盖项</strong>:复现包只覆盖它实际执行的检查,不声称覆盖全文每一个数字。</li>
-  </ul>
-  <p class="muted">重新生成 20 个预测格需要冻结基座权重、六个适配器与 GPU,这条路径<strong>未</strong>被重跑,属于文档化而非已验证。</p>
-</section>
-
 <section id="limits">
-  <h2>适用范围与边界</h2>
+  <h2>适用范围</h2>
   <ul>
-    <li><strong>单一模型家族</strong>(Qwen2.5-7B-Instruct)、一种训练配置、三个冻结训练运行、<strong>一条</strong>新增结构假设。</li>
-    <li>评测分布是<strong>预定义等权分层</strong>,不是自然总体分布;区间条件于这三个训练运行,<strong>不代表训练随机性</strong>的总体区间。</li>
-    <li>完整规格对只在历史规格上训练过的适配器属于<strong>分布外格式</strong>,因此它的效应<strong>不能</strong>拆分归因于内容、长度或格式中的某一项。</li>
-    <li>历史提示没有显式固定参照区间,所以低配对成功率<strong>不能</strong>升级为“模型不理解该新增假设”;能说的是:按固定标签定义,配对更新成功率很低。</li>
-    <li>一切结论停在<strong>输出行为</strong>层面;数值端点始终由程序计算,模型只输出类别。</li>
-    <li>“存在一个简单实现也拿高分”只说明该替代实现存在,<strong>不说明模型使用了它</strong>;优于有限策略只缩小已考察的解释范围,<strong>不证明</strong>普遍因果推理能力。</li>
+    <li>单一模型家族、一种训练配置、<strong>三个</strong>已固定的训练运行、<strong>一条</strong>新增假设。</li>
+    <li>评测用的是人为设定的分层实例,<strong>不代表自然分布</strong>;区间也不代表换一批训练种子会怎样。</li>
+    <li>更完整的说法对只在旧说法上训练过的模型属于<strong>没见过的格式</strong>,所以它的效果<strong>不能</strong>拆开归因于“措辞、长度或排版”中的某一项。</li>
+    <li>旧说法没有把判定标准写死,所以低配对成功率<strong>不能</strong>升级成“模型不理解这条新假设”;能说的是:按固定标准衡量,配对更新成功率很低。</li>
+    <li>所有结论都停在<strong>输出行为</strong>层面:数值一直由程序计算,模型只输出类别。找出一个简单实现也能拿高分,<strong>不等于</strong>证明模型用了它。</li>
   </ul>
 </section>
 
